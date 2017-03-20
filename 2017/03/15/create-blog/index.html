@@ -6,30 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://itdayu.com">
-  <title>git+node.js+Hexo搭建静态博客 | KingYYH的博客</title>
+  <title>KingYYH的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="最近用git+node.js+hexo搭建了一个静态博客，总之兜兜转转一大圈，因为无人一起讨论，所以也走了不少弯路，俗话说的好：在技术的世界里如果没经历过绝望，就说明你折腾的还不够。言归正传，前人栽树后人乘凉，今天在这里简单的讲解下我的博客搭建过程以及搭建过程中可能会遇到的问题。
-
-一、环境的配置
-Node.js
-因为Hexo  是一个基于Node.js的静态博客框架，因此需要先安装Node.j">
+  <meta name="description" content="前端小小白">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git+node.js+Hexo搭建静态博客">
+<meta property="og:title" content="KingYYH的博客">
 <meta property="og:url" content="http://itdayu.com/2017/03/15/create-blog/index.html">
 <meta property="og:site_name" content="KingYYH的博客">
-<meta property="og:description" content="最近用git+node.js+hexo搭建了一个静态博客，总之兜兜转转一大圈，因为无人一起讨论，所以也走了不少弯路，俗话说的好：在技术的世界里如果没经历过绝望，就说明你折腾的还不够。言归正传，前人栽树后人乘凉，今天在这里简单的讲解下我的博客搭建过程以及搭建过程中可能会遇到的问题。
-
-一、环境的配置
-Node.js
-因为Hexo  是一个基于Node.js的静态博客框架，因此需要先安装Node.j">
-<meta property="og:updated_time" content="2017-03-16T11:19:09.158Z">
+<meta property="og:description" content="前端小小白">
+<meta property="og:updated_time" content="2017-03-20T07:23:30.172Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git+node.js+Hexo搭建静态博客">
-<meta name="twitter:description" content="最近用git+node.js+hexo搭建了一个静态博客，总之兜兜转转一大圈，因为无人一起讨论，所以也走了不少弯路，俗话说的好：在技术的世界里如果没经历过绝望，就说明你折腾的还不够。言归正传，前人栽树后人乘凉，今天在这里简单的讲解下我的博客搭建过程以及搭建过程中可能会遇到的问题。
-
-一、环境的配置
-Node.js
-因为Hexo  是一个基于Node.js的静态博客框架，因此需要先安装Node.j">
+<meta name="twitter:title" content="KingYYH的博客">
+<meta name="twitter:description" content="前端小小白">
   
     <link rel="alternative" href="/atom.xml" title="KingYYH的博客" type="application/atom+xml">
   
@@ -172,153 +160,9 @@ Node.js
             <article id="post-create-blog" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      git+node.js+Hexo搭建静态博客
-    </h1>
-  
-
-        
-        <a href="/2017/03/15/create-blog/" class="archive-article-date">
-  	<time datetime="2017-03-15T11:33:45.862Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-15</time>
-</a>
-        
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
-        <ul>
-<li>最近用git+node.js+hexo搭建了一个静态博客，总之兜兜转转一大圈，因为无人一起讨论，所以也走了不少弯路，俗话说的好：在技术的世界里如果没经历过绝望，就说明你折腾的还不够。言归正传，前人栽树后人乘凉，今天在这里简单的讲解下我的博客搭建过程以及搭建过程中可能会遇到的问题。</li>
-</ul>
-<h1 id="一、环境的配置"><a href="#一、环境的配置" class="headerlink" title="一、环境的配置"></a>一、环境的配置</h1><ul>
-<li>Node.js<ul>
-<li>因为Hexo  是一个基于Node.js的静态博客框架，因此需要先安装Node.js环境，下载地址：<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a></li>
-</ul>
-</li>
-<li>Git<ul>
-<li>此处为Windows平台下的下载地址:<a href="https://git-scm.com/download/win" target="_blank" rel="external">Git</a> </li>
-<li>Mac及其他操作系统请参考Hexo官方提供的下载链接。</li>
-</ul>
-</li>
-</ul>
-<h1 id="二、安装Hexo"><a href="#二、安装Hexo" class="headerlink" title="二、安装Hexo"></a>二、安装Hexo</h1><ul>
-<li>完成以上环境配置之后,通过下面的命令安装Hexo<ul>
-<li><strong>npm install -g hexo-cli</strong></li>
-</ul>
-</li>
-<li>出现下图所示信息表示Hexo安装成功。<ul>
-<li><strong>start blogging with Hexo!</strong>   </li>
-</ul>
-</li>
-<li>PS:在mac下安装，有可能遇到权限拒绝的报错，需要执行如下命令来 进行<a href="https://github.com/hexojs/hexo/issues/913" target="_blank" rel="external">安装</a>， <ul>
-<li>sudo npm install -g -unsafe-perm hexov</li>
-</ul>
-</li>
-</ul>
-<h1 id="三、建站"><a href="#三、建站" class="headerlink" title="三、建站"></a>三、建站</h1><ul>
-<li>安装完成之后，选择一个目录作为建站所需文件的存放路径，如我选择d:\work\blog，执行以下命令完成hexo的初始化：<ul>
-<li>hexo init d:\work\blog  </li>
-</ul>
-</li>
-<li>然后命令行进入该目录下<ul>
-<li>cd d:\work\blog</li>
-</ul>
-</li>
-<li>执行下面的命令，系统会可以根据package.json文件中dependencies的配置安装所有依赖包<ul>
-<li>npm install</li>
-</ul>
-</li>
-<li>新建完成之后，根目录文件夹下各个目录的含义，可以参考Hexo官网的解释</li>
-</ul>
-<h1 id="四、启动"><a href="#四、启动" class="headerlink" title="四、启动"></a>四、启动</h1><ul>
-<li>在建站工具的根目录（如上d:\work\blog）下通过以下命令启动服务器，之后访问网址 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 即可看到我们刚刚建立的博客，Hexo会默认生成一个Hello World的博文。  <ul>
-<li>hexo server</li>
-</ul>
-</li>
-<li>这样我们就已经可以在本地浏览我们自己的博客了。以后每次对博客进行修改，都可以先通过这种方式进行本地的预览，满意之后再部署到GitHub Pages上。</li>
-</ul>
-<h1 id="五、部署到GitHub"><a href="#五、部署到GitHub" class="headerlink" title="五、部署到GitHub"></a>五、部署到GitHub</h1><ul>
-<li>1.首先在你的GitHub上新建一个Repository，仓库名的固定写法为 your_user_name.github.io</li>
-<li>2.配置SSH-Key，网上有很多方法可供大家参考</li>
-<li>3.修改根目录的网站配置文件_config.yml，搜索deploy字段，修改成如下所示的格式。</li>
-</ul>
-<pre><code># Deployment 
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-   type: git
-   repo: git@github.com:DukeCuiChen/DukeCuiChen.github.io.git 
-   branch: master
-</code></pre><ul>
-<li>其中，repo是我们刚刚建立的远程仓库，换成你自己的id，同时因为刚才配置了SSH-Key，所以必须是SSH形式的URL。值得注意的是，每一个: 后面都必须有一个空格，否则会引起错误。<ul>
-<li>4.安装Git包，执行以下命令</li>
-</ul>
-</li>
-<li>npm install hexo-deployer-git –save<ul>
-<li>5.部署到GitHub上，执行以下的命令</li>
-</ul>
-</li>
-<li>hexo deploy<br>#####现在我们可以通过访问  <a href="http://kingyyh.github.io/" target="_blank" rel="external">http://kingyyh.github.io/</a> 来访问我们自己的博客啦！到此，我们的博客已经基本建立完成，当然，下面要讲怎么使用喽~</li>
-</ul>
-<h1 id="六、使用"><a href="#六、使用" class="headerlink" title="六、使用"></a>六、使用</h1><ul>
-<li>1.新建一篇微博文章可通过以下的命令<ul>
-<li>hexo new ‘name’</li>
-</ul>
-</li>
-<li>其中name为微博文章的名字，建立完成之后，可以在./source/_posts文件夹下发现我们刚刚建立的 name.md文件。使用你熟悉的编辑器打开，便可以进行博文的撰写。微博文章支持MarkDown语法的编写，下面是一个示例文件的内容</li>
-</ul>
-<pre><code>---
-title: name
-date: 2016-04-06 10:34:21
-tags: 
-- 开始
-- 日志
-categories: 
-- 日志
----
-我的第一篇微博文章。。。。。。
-</code></pre><ul>
-<li>2.博文写好之后，在每次发布之前，我们要先将写好的博客生成静态文件，执行以下命令  <ul>
-<li>hexo generate</li>
-</ul>
-</li>
-<li>之后生成的文件会放在./public目录下，这便是我们将要部署到GitHub上的全部内容。 </li>
-<li>3.静态文件生成之后，便可以部署到GitHub上<ul>
-<li>hexo deploy</li>
-</ul>
-</li>
-<li>再重新打开我们的博客 <a href="http://kingyyh.github.io/" target="_blank" rel="external">http://kingyyh.github.io/</a> 已经可以看到刚刚新加入的博文</li>
-</ul>
-<h1 id="七、主题"><a href="#七、主题" class="headerlink" title="七、主题"></a>七、主题</h1><ul>
-<li>Hexo提供了丰富的主题可供我们选择和使用，在./themes目录下存放主题。刚才默认生成的博客用的就是默认的主题landscape。这里有在GitHub上Hexo所有的主题，可以访问<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">https://github.com/hexojs/hexo/wiki/Themes</a></li>
-<li>1.安装主题的命令 <ul>
-<li>git clone <repository> themes/<theme-name></theme-name></repository></li>
-</ul>
-</li>
-<li>2.打开 _config.yml 文件，修改theme关键字段，改为刚才下载的 theme-name </li>
-</ul>
-<h1 id="八、设置域名"><a href="#八、设置域名" class="headerlink" title="八、设置域名"></a>八、设置域名</h1><ul>
-<li><p>博客搭建好之后，我们可以通过<a href="http://itdayu.github.io/" target="_blank" rel="external">http://itdayu.github.io/</a> 类似的域名进行访问，而且GitHub提供这样的服务是完全免费的。当然我们也可以通过我们自己的域名来进行访问，这就需要首先购买我们想要的域名。我是在DNSPod上购买的域名并进行管理操作的，具体的购买方式可以去DNSPod的主页查看。购买成功后，下面来看如何绑定我们的域名。在DNSPod的控制台，我们点击添加记录，设置主机记录为@，类型为A，到IP 192.30.252.153（固定值）。 </p>
-</li>
-<li><p>设置完成保存后，可能等几分钟生效。可以通过ping我们的域名来检验设置是否生效。而后，在./source目录下新建文件CNAME（无后缀名），文件中写上我们要绑定的域名，例如itdayu.com，再hexo generate生成静态文件，并hexo deploy部署到GitHub上。这时就可以通过<a href="http://itdayu.com/">http://itdayu.com/</a> 访问我们的博客啦</p>
-</li>
-</ul>
-<h1 id="九、一些建议"><a href="#九、一些建议" class="headerlink" title="九、一些建议"></a>九、一些建议</h1><ul>
-<li>Hexo同样具有良好的扩展性，你可以安装很多第三方的插件，例如sitemap，安装sitemap插件之后，你可以生成自己的站点地图，然后将你的sitemap提交给谷歌或者百度，让这些搜索引擎可以抓取到你的博客的内容，提高访问量。</li>
-<li>1.安装sitemap插件<ul>
-<li>npm install hexo-generator-sitemap –save</li>
-</ul>
-</li>
-<li>2.设置启用sitemap插件，在根目录打开配置文件_config.yml，增加以下内容</li>
-</ul>
-<pre><code>#sitemap
-sitemap:
-path: sitemap.xml
-</code></pre><ul>
-<li>之后再执行hexo server，访问 <a href="http://localhost:4000/sitemap.xml" target="_blank" rel="external">http://localhost:4000/sitemap.xml</a> ，即可看到站点地图，说明我们的设置生效。</li>
-</ul>
-
+        
       
 
       
